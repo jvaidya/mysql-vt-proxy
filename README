@@ -13,7 +13,7 @@ START SERVER
 
 The following assumes that you have all vitess components running locally.
 
-./mysql-vt-proxy -host 0.0.0.0 -P 15891 -keyspace test_keyspace -tablettype master
+./mysql-vt-proxy -host 0.0.0.0 -P 15891 -vtgate "localhost:15991" -keyspace test_keyspace -tablettype master
 I0106 15:34:14.362505    4520 main.go:58] Welcome to Mysql Vitess proxy.
 I0106 15:34:14.362935    4520 main.go:59] Will use vtgate at localhost:15991 for test_keyspace:master
 I0106 15:34:14.363242    4520 server.go:141] Server run MySQL Protocol Listen at [0.0.0.0:15891]
