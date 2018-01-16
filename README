@@ -1,4 +1,7 @@
 
+
+*NOTE*: This project has become obsolete because Vitess now natively supports MySQL protocol.
+
 mysql-vt-proxy allows clients that speak mysql text protocol to talk to the
 vtgate component of vitess (http://www.vitess.io)
 
